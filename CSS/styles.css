@@ -36,12 +36,24 @@ html {
 
 /* Стилі header */
 
-.site-nav {
-    display: flex;
-}
-
 .main-nav {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    margin-left: 93px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -64,11 +76,6 @@ text-decoration: none;
 color: var(--button-color);
 }
 
-.site-nav .nav-item:not(:last-child) {
- margin-right: 50px;
-}
-
-
 .site-nav .link {
 cursor: pointer; 
 color: var(--text-color);
@@ -78,7 +85,6 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 padding-top: 32px;
 padding-bottom: 32px;
-display: block;
 }
 
 .site-nav .link:hover,
@@ -88,6 +94,8 @@ color: var(--button-color);
 
 .contacts {
     display: flex;
+    gap: 50px;
+    margin-left: auto;
 }
 
 .contacts .link {
@@ -98,10 +106,6 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
     }
-
-    .contacts .nav-item:not(:last-child) {
-        margin-right: 50px;
-    } 
     
 .contacts .link:hover,
 .contacts .link:focus {
@@ -111,6 +115,7 @@ letter-spacing: 0.02em;
     /* Стилі main */
 .main-section {
     background-color: var(--footer-bgcolor);
+    text-align: center;
 }
 
 .main-text {
@@ -133,6 +138,8 @@ color: #FFFFFF;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .invisible-title {
