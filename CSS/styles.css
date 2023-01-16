@@ -125,7 +125,6 @@ letter-spacing: 0.02em;
     height: 600px;
     text-align: center;
     padding: 200px 250px;
-
 }
 
 .main-text {
@@ -150,6 +149,12 @@ color: #FFFFFF;
 
 .invisible-title {
     visibility: hidden;
+}
+
+.about-list {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
 }
 
 .about-studio {
