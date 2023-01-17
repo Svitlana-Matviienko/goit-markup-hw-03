@@ -14,6 +14,7 @@ html {
     --button-color: #2196F3;
     --footer-bgcolor: #2F303A;
     --light-color: #757575;
+    --team-color: #F5F4FA;
 }
 
 .body {
@@ -172,12 +173,38 @@ letter-spacing: 0.03em;
 color: var(--light-color);
 }
 
+.work-img {
+    display: flex;
+    gap: 30px;
+}
+
 .work-title, .team-title {
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--text-color);
+margin-bottom: 50px;
+}
+
+.team-section {
+    background-color: var(--team-color);
+}
+
+.team-title {
+    padding-top: 95px;
+}
+
+.team-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.work-cards {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-bottom: 95px;
 }
 
 .team-name {
@@ -186,6 +213,8 @@ font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--text-color);
+text-align: center;
+padding-top: 30px;
 }
 
 .team-position {
@@ -193,7 +222,11 @@ font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--light-color);
+padding-bottom: 95px;
+text-align: center;
+padding-bottom: 30px;
 }
+
 
 /* Стилі footer */
 .footer {
@@ -208,13 +241,18 @@ color: var(--light-color);
     color: #FFFFFF;
     text-decoration: none;
     }
+
+    .log-footer {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
     
 .footer-address {
 font-size: 14px;
 line-height: 1.7;
 letter-spacing: 0.03em;
 color: #FFFFFF;
-font-style: normal
+font-style: normal;
 }
 
 .footer-contacts {
@@ -222,6 +260,7 @@ font-size: 14px;
 line-height: 1.7;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
+padding-bottom: 60px;
 }
 
 /* Стилі Portfolio */
