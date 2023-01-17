@@ -41,6 +41,8 @@ html {
     background-color: #FFFFFF;
     padding-top: 30px;
     padding-bottom: 30px;
+    border-bottom: 1px;
+    border-color: rgba(236, 236, 236, 1);
 }
 
 .main-nav {
@@ -310,13 +312,15 @@ color: #FFFFFF;
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-   padding-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .portfolio-item {
     flex-basis: calc((100% - 60px) / 3);
     background-color: #FFFFFF;
-    border: rgba(238, 238, 238, 1);
+    border-bottom: 1px;
+    border-color: rgba(238, 238, 238, 1);
     }
 
 .item-title {
