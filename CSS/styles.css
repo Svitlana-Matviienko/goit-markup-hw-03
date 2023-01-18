@@ -30,6 +30,14 @@ html {
     margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
 .link {
     text-decoration: none;
     color: inherit;
@@ -39,8 +47,8 @@ html {
 
 .header {
     background-color: #FFFFFF;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgba(236, 236, 236, 1);
@@ -50,8 +58,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 32px;
-    margin-bottom: 25px;
 }
 
 .site-nav {
@@ -126,15 +132,9 @@ letter-spacing: 0.02em;
     /* Стилі main */
 .main-section {
     background-color: var(--footer-bgcolor);
-}
-
-.main-container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
-    padding: 200px 250px;
 }
 
 .main-text {
@@ -144,6 +144,9 @@ line-height: 1.36;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #FFFFFF;
+padding-left: 250px;
+padding-right: 250px;
+margin-bottom: 30px;
 }
 
 .main-button {
@@ -151,22 +154,35 @@ color: #FFFFFF;
     background-color: var(--button-color);
     color: #FFFFFF;
     font-size: 16px;
+    font-weight: 700;
     line-height: 1.87;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.96px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-style: solid;
     border-radius: 4px;
     border-color: var(--button-color);
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 430px;
 }
 
 .invisible-title {
     visibility: hidden;
 }
 
+.about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .about-list {
     display: flex;
     gap: 30px;
     justify-content: space-around;
+}
+.about-item {
+    width: 270px;
 }
 
 .about-studio {
@@ -175,6 +191,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--text-color);
+padding-bottom: 10px;
 }
 
 .text-about {
@@ -187,7 +204,6 @@ color: var(--light-color);
 .work-img {
     display: flex;
     gap: 30px;
-    margin-bottom: 95px;
 }
 
 .work-title, .team-title {
@@ -201,10 +217,8 @@ margin-bottom: 50px;
 
 .team-section {
     background-color: var(--team-color);
-}
-
-.team-title {
-    padding-top: 95px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-cards {
@@ -216,7 +230,11 @@ margin-bottom: 50px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-bottom: 95px;
+}
+
+.team-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-name {
@@ -226,7 +244,7 @@ line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--text-color);
 text-align: center;
-padding-top: 30px;
+padding-bottom: 10px;
 }
 
 .team-position {
@@ -234,9 +252,7 @@ font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--light-color);
-padding-bottom: 95px;
 text-align: center;
-padding-bottom: 30px;
 }
 
 
@@ -277,6 +293,11 @@ color: rgba(255, 255, 255, 0.6);
 
 /* Стилі Portfolio */
 
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .container-portfolio {
     width: 1170px;
     margin-left: auto;
@@ -287,7 +308,7 @@ color: rgba(255, 255, 255, 0.6);
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-top: 95px;
+    padding-bottom: 34px;
 }
 
 .portfolio-button  {
@@ -302,8 +323,11 @@ border-style: solid;
 border-color: var(--team-color);
 border-radius: 4px;
 border-width: 1px;
-min-width: 73px;
+width: 125px;
 height: 38px;
+left: 593px;
+top: 174px;
+padding: 12px, 22px;
 }
 
 .portfolio-button:hover, 
@@ -318,8 +342,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    padding-top: 94px;
-    margin-bottom: 94px;
 }
 
 .portfolio-item {
@@ -330,13 +352,17 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     border-bottom-color: rgba(238, 238, 238, 1);
     }
 
+    .portfolio-items {
+        padding-top: 20px;
+        padding-left: 24px;
+        padding-bottom: 20px;
+    }
+
 .item-title {
 color: var(--text-color);
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
-padding-top: 20px;
-padding-left: 24px;
 }
 
 .item-project {
@@ -344,6 +370,4 @@ color: var(--light-color);
 font-size: 16px;
 line-height: 1.8;
 letter-spacing: 0.03em;
-padding-bottom: 20px;
-padding-left: 24px;
 }
